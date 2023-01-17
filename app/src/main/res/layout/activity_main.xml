@@ -37,7 +37,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="8dp"
-                android:backgroundTint="#0D7377"
+                android:backgroundTint="#0D7376"
                 android:fontFamily="sans-serif-black"
                 android:paddingVertical="20dp"
                 android:text="Top Hits"
