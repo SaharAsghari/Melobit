@@ -10,6 +10,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:background="#0D7377"
+        android:background="#0D7376"
         android:src="@drawable/splashlogo" />
 </LinearLayout>
