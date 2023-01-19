@@ -1,6 +1,5 @@
 package com.shariaty.melobit.data;
 
-import com.google.android.material.slider.Slider;
 import com.google.gson.annotations.SerializedName;
 
 public class Image {
@@ -24,7 +23,7 @@ public class Image {
         return thumbnailSmall;
     }
 
-    public Cover getCover() {
+    public Cover getCover(){
         return cover;
     }
 

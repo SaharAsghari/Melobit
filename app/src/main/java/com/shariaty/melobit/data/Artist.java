@@ -1,6 +1,5 @@
 package com.shariaty.melobit.data;
 
-import android.media.Image;
 
 import com.google.gson.annotations.SerializedName;
 
