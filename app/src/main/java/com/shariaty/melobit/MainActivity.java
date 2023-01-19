@@ -36,21 +36,14 @@ public class MainActivity extends AppCompatActivity{
         rvTopSingers = findViewById(R.id.rv_top_singers);
         viewPager = findViewById(R.id.view_pager);
         Button hitsBtn = findViewById(R.id.button_hit);
-        FloatingActionButton btnSearch = findViewById(R.id.btn_search);
+
         //etQuery = findViewById(R.id.et_query);
 
         hitsBtn.setOnClickListener(view -> {
             Intent intent = new Intent(MainActivity.this, HitsActivity.class);
             startActivity(intent);
         });
-        btnSearch.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, SearchActivity.class);
-                //intent.putExtra("query",etQuery.getText().toString());
-                startActivity(intent);
-            }
-        });
+
         LinearLayoutManager layoutManager
                 = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
         rvLatestSongs.setLayoutManager(layoutManager);
@@ -94,6 +87,7 @@ public class MainActivity extends AppCompatActivity{
                 results.setText(errorMessage);
             }
         };
+
         manager.getLatestSongs(latestListener);
         manager.getTrendingArtist(artistsListener);
         manager.getSliders(sliderListener);

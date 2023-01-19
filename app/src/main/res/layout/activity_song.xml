@@ -60,6 +60,7 @@
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginTop="8dp"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -92,25 +93,24 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textview4" />
 
-<TextView
-    android:id="@+id/tv_play_count"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    app:layout_constraintStart_toEndOf="@+id/textview4"
-    android:layout_marginStart="32dp"
-    android:layout_marginTop="18dp"
-    app:layout_constraintTop_toBottomOf="@+id/btn_play"
-    app:layout_constraintBottom_toBottomOf="@+id/textview4"
-    />
+    <TextView
+        android:id="@+id/tv_play_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textview4"
+        app:layout_constraintStart_toEndOf="@+id/textview4"
+        app:layout_constraintTop_toBottomOf="@+id/btn_play" />
+
     <TextView
         android:id="@+id/tv_release_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toEndOf="@+id/textview5"
         android:layout_marginStart="22dp"
-        android:layout_marginTop="18dp"
-        app:layout_constraintTop_toBottomOf="@+id/tv_play_count"
+        android:layout_marginTop="25dp"
         app:layout_constraintBottom_toBottomOf="@+id/textview5"
-        />
+        app:layout_constraintStart_toEndOf="@+id/textview5"
+        app:layout_constraintTop_toBottomOf="@+id/tv_play_count" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
